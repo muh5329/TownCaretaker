@@ -13,16 +13,6 @@
 ## Prequisites
 
 
-## Build Commands 
-
--- Install Raylib
-
-[raylib](https://www.raylib.com/)
-
--- On MacOsx --
-```sh
-brew install raylib
-```
 
 ## Folder Structure 
 
