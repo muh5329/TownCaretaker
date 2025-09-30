@@ -13,6 +13,15 @@
 ## Prequisites
 
 
+## Build Steps
+
+mkdir bin
+cd build
+cmake ..
+cmake --build .
+make
+./FactoryGameConcept 
+
 
 ## Folder Structure 
 
