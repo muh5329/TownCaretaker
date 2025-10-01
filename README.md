@@ -20,7 +20,7 @@ cd build
 cmake ..
 cmake --build .
 make
-./FactoryGameConcept 
+./TownCaretaker 
 
 
 ## Folder Structure 

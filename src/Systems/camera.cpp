@@ -42,7 +42,7 @@ class RtsCamera : public Camera3D {
         }
     
         void Update() {
-            float moveSpeed = 0.2f;
+            float moveSpeed = 0.01f;
     
             // Right vector from camera direction
             Vector3 direction = Vector3Normalize(Vector3Subtract(target, position));

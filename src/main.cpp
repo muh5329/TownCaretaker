@@ -1,6 +1,6 @@
 #include <raylib.h>
 #include <raymath.h>
-#include <Systems/camera.cpp>
+#include "Systems/camera.cpp"
 
 
 class Game {
@@ -14,14 +14,10 @@ class Game {
 			InitWindow(400, 224, "Town Caretaker");
 	
 			// Create a player capsule
-			float playerRadius = 0.4;
-			float playerLength = 1.2f; // Cylinder length
-			Vector3 playerPosition = { 0.0f, 1.0f, 0.0f };
+			playerRadius = 0.4f;
+			playerLength = 1.2f; // Cylinder length
+			playerPosition = { 0.0f, 1.0f, 0.0f };
 
-			// Raylib Camera (3rd person setup)
-			RtsCamera camera;	
-
-			Run();
 		}
 		~Game(){
 			CloseWindow();
@@ -64,6 +60,9 @@ class Game {
 
 			// Draw player capsule
 			DrawCapsule(playerPosition, playerRadius, playerLength , RED);
+
+			// End 3D mode
+			EndMode3D();
 
 			EndDrawing();
 		}
